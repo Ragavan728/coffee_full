@@ -1,0 +1,1060 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: word-wrap;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eff2f7;
+    font-family: "Merienda", serif;
+    font-family: "Nunito", serif;
+    line-height: 1.5rem;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #212529;
+    --secondaryColor: #be9c79;
+    --tertiaryColor: #343a40;
+    --fourthColor: #ffffff;
+    --darkColor: #ff9d00;
+    --lightColor: #fff1d5;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Merienda", serif;
+    --ffSecondary: "Nunito", serif;
+}
+
+/* project standard classes Starts */
+
+/* .align {
+    max-width: 1200px;
+    margin: auto;
+} */
+
+/* .componentSpacing {
+    padding: 3rem 0rem;
+} */
+
+/* .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0rem 2rem;
+} */
+
+/* .dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+/* Navbar code */
+/* ::::CSS Sequence (7 Steps):::: */
+
+/* Step1: parentContainer */
+/* Step2: component*/
+/* Step3: componentContainer*/
+/* Step4: row */
+/* Step5: column */
+/* Step6: subColumn */
+/* Step7: contentContainer */
+
+
+/* ::::CSS Sequence (7 Steps):::: */
+
+/* Step1: parentContainer */
+/* already written in style.css */
+
+/* Step2:  component */
+/* .navBar {
+    background-color: #ffd000;
+    padding: 3rem 0rem;
+} */
+
+/* Step3: componentContainer */
+.navContainer {
+    /* background-color: #01325c; */
+    width: 100%;
+    margin: auto;
+}
+
+/* Step4: row */
+.navBody {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 20rem;
+}
+
+/* Step5: column 1 */
+.logoBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.logoBox {
+    /* background-color:#faebd7; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.logoBox img {
+    /* background-color: #ff9500; */
+    cursor: pointer;
+    height: 5rem;
+    /* padding: 2rem; */
+}
+
+/* Step5: column 2 */
+.navlinkBlock {
+    /* background-color: #a1d3ff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.navlinkBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.navlinkBox li {
+    /* background-color: #978d7e; */
+    list-style: none;
+    padding: 2rem;
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    /* color: var(--tertiaryColor); */
+}
+
+.navlinkBox a {
+    text-decoration: none;
+    color: var(--tertiaryColor);
+}
+
+/* Navbar code */
+
+/* Hero Section code */
+/* Step2: component */
+.heroSection {
+    /* background-color: #fff67f; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step3: componentContainer */
+.heroContainer {
+    /* background-color: #fffbc8; */
+    padding: 3rem 0rem;
+}
+
+/* Step4: row */
+.heroBody {
+    /* background-color: #ff8c00; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 18rem 3rem;
+}
+
+/* Step5: column */
+.heroBlock {
+    /* background-color: #ffedd6; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 18rem 0rem; */
+}
+
+/* Step6: subColumn */
+.heroBox {
+    /* background-color: #ffcf94; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+/* Step7: contentContainer */
+.heroBox h1 {
+    /* background-color: #f9aa49; */
+    font-family: var(--ffPrimary);
+    color: var(--primaryColor);
+    line-height: 8rem;
+    font-size: 7rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.heroBox p {
+    /* background-color: #beac96; */
+    color: var(--primaryColor);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heroBox button {
+    background-color: var(--secondaryColor);
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0rem;
+    color: var(--fourthColor);
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+
+/* :::MAIN Code Starts here::: */
+/* Our Menu code */
+/* Step2: component */
+.ourMenu {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.ourMenuContainer {
+    /* background-color: #fffbc8; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row */
+.ourMenuBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 2 */
+.ourMenuImgBlock {
+    /* background-color: #000000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.ourMenuImgBlock img {
+    /* background-color: #fffbc8; */
+    height: 60rem;
+}
+
+/* Step5: column 2 */
+.ourMenuBlock {
+    /* background-color: #ffedd6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.ourMenuBox {
+    /* background-color: #ffcf94; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15rem 1rem;
+    width: 100%;
+}
+
+/* Step7: contentContainer */
+.ourMenuBox h2 {
+    /* background-color: #f9aa49; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primaryColor);
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.ourMenuBox p {
+    /* background-color: #beac96; */
+    font-family: var(--ffSecondary);
+    text-align: start;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.ourMenuBox button {
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+    border: none;
+    padding: 1rem 3rem;
+    color: var(--lightColor);
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Our Menu code */
+
+/* Facility code */
+/* Step2:  component */
+.ourFacility {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.ourFacilityContainer {
+    /* background-color: var(--fourthColor); */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.headingBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+/* Step4: row 2 */
+.facilityListsBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.facilityBlock {
+    /* background-color: #000000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.facilityCard {
+    /* background-color: #25ffb6; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.facilityCardHead img {
+    /* background-color: #ffffff; */
+    height: 9rem;
+    margin-bottom: 2rem;
+}
+
+.facilityCardBody h3 {
+    /* background-color: #f5f5dc; */
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primaryColor);
+}
+
+.facilityCardBody p {
+    /* background-color: blanchedalmond; */
+    font-family: var(--ffSecondary);
+    text-transform: capitalize;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+/* Facility code */
+
+/* Popular code */
+/* Step2:  component */
+.popularMenu {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.popularMenuContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.headingBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* Step4: row 2 */
+.popularMenuBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 10rem;
+}
+
+/* Step5: column */
+.popularMenuBlock {
+    /* background-color: #000000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+
+/* Step6: subColumn */
+.popularMenuCard {
+    /* background-color: #25ffb6; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+/* Step7: contentContainer */
+.popularCardHead img {
+    /* background-color: #ffffff; */
+    height: 28rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.popularCardBody p {
+    /* background-color: blanchedalmond; */
+    font-family: var(--ffSecondary);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+/* Popular code */
+
+/* Gallery code */
+/* Step2: component */
+.ourGallery {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.ourGalleryContainer {
+    /* background-color: #fffbc8; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* Step4: row 2 */
+.ourGalleryBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.ourGalleryBlock {
+    /* background-color: #ffedd6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.ourGalleryCard {
+    /* background-color: #533818; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Step7: contentContainer */
+.cardHead img {
+    /* background-color: #f9aa49; */
+    height: 25rem;
+}
+
+/* Gallery code */
+
+/* Team code */
+/* Step2:  component */
+.ourTeam {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.ourTeamContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* Step4: row 2 */
+.ourTeamBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 10rem;
+}
+
+/* Step5: column */
+.ourTeamBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.ourTeamCard {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+}
+
+/* Step7: contentContainer */
+.teamCardHead img {
+    /* background-color: #245532; */
+    height: 30rem;
+    margin-bottom: 1rem;
+}
+
+.teamCardBody p {
+    /* background-color: #40688a; */
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Team code */
+/* :::MAIN Code Ends here::: */
+
+
+/* :::FOOTER Code Starts here::: */
+/* Contact code */
+/* Step2:  component */
+.contactUs {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.contactContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 20rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* Step4: row 2 */
+.contactUsBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 1 */
+.contactUsImgBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.imgBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step7: contentContainer */
+.imgBox img {
+    /* background-color: var(--darkColor); */
+    height: 70rem;
+}
+
+/* Contact code */
+
+/* Contact Icons code */
+/* Step2:  component */
+.footer {
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
+}
+
+/* Step3: componentContainer */
+.footerContainer {
+    /* background-color: #01325c; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Step4: row 1 */
+.footerBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 1 */
+.footerBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Step6: subColumn */
+.footerCard {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+/* Step7: contentContainer */
+.cardHead i {
+    background-color: var(--secondaryColor);
+    font-size: 4rem;
+    color: var(--fourthColor);
+    border: 2rem solid var(--secondaryColor);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.cardBody h5 {
+    /* background-color: #7fffd4; */
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.cardBody p {
+    /* background-color: #f5f5dc; */
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+/* Step4: row  2 */
+.copyrightsBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column 2 */
+.copyrightsBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.copyrightsBox {
+    /* background-color: var(--lightColor); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Step7: contentContainer */
+.copyrightsBox p {
+    /* background-color: #0f416c; */
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    color: var(--ffPrimary);
+    text-transform: capitalize;
+}
+
+.copyrightsBox span {
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+}
+
+/* Contact Icons code */
+/* :::FOOTER Code Ends here::: */
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+    /* write code here */
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+    /* write code here */
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (width >=993px) and (width <=1200px) {
+    /* write code here */
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width >=1200px) {
+    /* write code here */
+}
