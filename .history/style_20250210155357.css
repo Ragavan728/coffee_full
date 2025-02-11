@@ -59,8 +59,8 @@ svg {
 }
 
 :root {
-    --primaryColor: #212529;
-    --secondaryColor: #be9c79;
+    --primaryColor: #be9c79;
+    --secondaryColor: #212529;
     --tertiaryColor: #343a40;
     --fourthColor: #fff1d5;
     --darkColor: #ff9d00;
@@ -73,16 +73,16 @@ svg {
 
 /* project standard classes Starts */
 
-.align {
+/* .align {
     max-width: 1200px;
     margin: auto;
-}
+} */
 
-.componentSpacing {
+/* .componentSpacing {
     padding: 3rem 0rem;
-}
+} */
 
-.grid-1 {
+/* .grid-1 {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem 2rem;
@@ -106,9 +106,9 @@ svg {
     column-gap: 1rem;
     row-gap: 1rem;
     padding: 0rem 2rem;
-}
+} */
 
-.dflex {
+/* .dflex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,7 @@ svg {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+} */
 
 /* project standard classes Ends */
 
@@ -165,28 +165,24 @@ footer {
 /* already written in style.css */
 
 /* Step2:  component */
-.navBar {
-    background-color: var(--lightColor);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    /* padding: 3rem 0rem; */
-}
+/* .navBar {
+    background-color: #ffd000;
+    padding: 3rem 0rem;
+} */
 
 /* Step3: componentContainer */
 .navContainer {
     /* background-color: #01325c; */
-    width: 1200px;
+    width: 100%;
     margin: auto;
-    
 }
 
 /* Step4: row */
 .navBody {
-    /* background-color: #ffffff; */
-    padding: 1rem 3rem;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 20rem;
 }
 
 /* Step5: column 1 */
@@ -253,24 +249,22 @@ footer {
 /* Step2: component */
 .heroSection {
     /* background-color: #fff67f; */
-    background-color: #fffbc8;
-    padding: 3rem 0rem;
-    background-image: url(./assets/images/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Step3: componentContainer */
 .heroContainer {
-    max-width: 1200px;
-    margin: auto;
+    /* background-color: #fffbc8; */
+    padding: 3rem 0rem;
 }
 
 /* Step4: row */
 .heroBody {
     /* background-color: #ff8c00; */
-    padding: 18rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 18rem 3rem;
 }
 
 /* Step5: column */
@@ -345,8 +339,9 @@ button:hover {
 
 /* Step4: row */
 .ourMenuBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0rem 3rem;
-    gap: 4rem;
 }
 
 /* Step5: column 2 */
@@ -378,7 +373,7 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    text-align: start;
+    padding: 15rem 1rem;
     width: 100%;
 }
 
@@ -421,8 +416,8 @@ button:hover {
 /* Facility code */
 /* Step2:  component */
 .ourFacility {
-    background-color: var(--lightColor);
-    padding: 3rem 0rem;
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
 }
 
 /* Step3: componentContainer */
@@ -434,8 +429,10 @@ button:hover {
 
 /* Step4: row 1 */
 .headingBody {
-    padding: 2rem 3rem;
-    /* background-color: #000000; */
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
 }
 
 /* Step5: column */
@@ -450,20 +447,22 @@ button:hover {
 .headingBox {
     /* background-color: #86a7c5; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     width: 100%;
+    padding: 1rem;
 }
 
 /* Step7: contentContainer */
-.headingImg img {
+.headingBox img {
     /* background-color: #0f416c; */
-    width: 18rem;
+    height: 4rem;
     margin-bottom: 2rem;
 }
 
 .headingBox h2 {
+    /* background-color: #40688a; */
     font-family: var(--ffPrimary);
     font-size: 4rem;
     font-weight: 800;
@@ -474,6 +473,9 @@ button:hover {
 
 /* Step4: row 2 */
 .facilityListsBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0rem 3rem;
 }
 
@@ -526,7 +528,7 @@ button:hover {
 /* Popular code */
 /* Step2:  component */
 .popularMenu {
-    background-color: var(--lightColor);
+    background-color: var(--fourthColor);
     /* padding: 3rem 0rem; */
 }
 
@@ -537,9 +539,53 @@ button:hover {
     margin: auto;
 }
 
+/* Step4: row 1 */
+.headingBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
 /* Step4: row 2 */
 .popularMenuBody {
-    padding: 0rem 3rem;
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 10rem;
 }
 
 /* Step5: column */
@@ -581,7 +627,7 @@ button:hover {
 /* Gallery code */
 /* Step2: component */
 .ourGallery {
-    background-color: var(--lightColor);
+    background-color: var(--fourthColor);
     /* padding: 3rem 0rem; */
 }
 
@@ -592,8 +638,52 @@ button:hover {
     margin: auto;
 }
 
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
 /* Step4: row 2 */
 .ourGalleryBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0rem 3rem;
 }
 
@@ -626,8 +716,8 @@ button:hover {
 /* Team code */
 /* Step2:  component */
 .ourTeam {
-    background-color: var(--lightColor);
-    padding: 3rem 0rem;
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
 }
 
 /* Step3: componentContainer */
@@ -637,9 +727,53 @@ button:hover {
     margin: auto;
 }
 
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 3rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
 /* Step4: row 2 */
 .ourTeamBody {
-    padding: 0rem 3rem;
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 10rem;
 }
 
 /* Step5: column */
@@ -658,14 +792,14 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 /* Step7: contentContainer */
 .teamCardHead img {
     /* background-color: #245532; */
-    height: 35rem;
-    margin-bottom: 1.5rem;
+    height: 30rem;
+    margin-bottom: 1rem;
 }
 
 .teamCardBody p {
@@ -683,8 +817,8 @@ button:hover {
 /* Contact code */
 /* Step2:  component */
 .contactUs {
-    background-color: var(--lightColor);
-    padding: 3rem 0rem;
+    background-color: var(--fourthColor);
+    /* padding: 3rem 0rem; */
 }
 
 /* Step3: componentContainer */
@@ -694,8 +828,52 @@ button:hover {
     margin: auto;
 }
 
+/* Step4: row 1 */
+.headingBody {
+    /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 20rem;
+}
+
+/* Step5: column */
+.headingBlock {
+    /* background-color: #4aabff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Step6: subColumn 1 */
+.headingBox {
+    /* background-color: #86a7c5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Step7: contentContainer */
+.headingBox img {
+    /* background-color: #0f416c; */
+    height: 4rem;
+}
+
+.headingBox h2 {
+    /* background-color: #40688a; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
 /* Step4: row 2 */
 .contactUsBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0rem 3rem;
 }
 
@@ -726,7 +904,7 @@ button:hover {
 /* Contact Icons code */
 /* Step2:  component */
 .footer {
-    background-color: var(--lightColor);
+    background-color: var(--fourthColor);
     /* padding: 3rem 0rem; */
 }
 
@@ -739,6 +917,9 @@ button:hover {
 
 /* Step4: row 1 */
 .footerBody {
+    background-color: var(--fourthColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0rem 3rem;
 }
 
@@ -791,6 +972,8 @@ button:hover {
 /* Step4: row  2 */
 .copyrightsBody {
     /* background-color: #0088ff; */
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 0rem 3rem;
 }
 
@@ -819,7 +1002,6 @@ button:hover {
     font-size: 2rem;
     color: var(--ffPrimary);
     text-transform: capitalize;
-    line-height: 3rem;
 }
 
 .copyrightsBox span {

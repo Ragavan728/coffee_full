@@ -173,6 +173,7 @@ footer {
     right: 0;
     z-index: 1000;
     /* padding: 3rem 0rem; */
+    margin-bottom: 3rem;
 }
 
 /* Step3: componentContainer */

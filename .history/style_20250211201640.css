@@ -167,11 +167,6 @@ footer {
 /* Step2:  component */
 .navBar {
     background-color: var(--lightColor);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     /* padding: 3rem 0rem; */
 }
 
@@ -187,6 +182,8 @@ footer {
 .navBody {
     /* background-color: #ffffff; */
     padding: 1rem 3rem;
+    /* position: fixed;
+    left: 0; */
 }
 
 /* Step5: column 1 */
